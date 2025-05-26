@@ -6033,9 +6033,12 @@ Password found: xxxx
 
 
 
-|  | Donation Address |
-| --- | --- |
-| ♥ __BTC__ | 1Lw2gTnMpxRUNBU85Hg4ruTwnpUPKdf3nV |
-| ♥ __ETH__ | 0xaBd66CF90898517573f19184b3297d651f7b90bf |
 
+
+
+## Offline Recovery GUI
+The repository now includes `recovery_gui.py`, a minimal Tkinter application to help validate a seed phrase or private key and prepare an offline transaction to a new wallet.
+Run `python3 recovery_gui.py` on an offline system. Use **File → Search Wallets...** to scan a chosen directory for wallet files.
+Provide either your seed phrase or a private key, confirm the requested words, and specify the new destination address.
+After validation, use your preferred blockchain library to build and broadcast the transaction from your recovered keys.
 
