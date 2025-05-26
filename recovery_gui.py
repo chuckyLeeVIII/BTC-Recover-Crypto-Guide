@@ -24,38 +24,6 @@ class RecoveryApp(tk.Tk):
         self.key_entry = tk.Entry(self, width=80)
         self.key_entry.pack(fill=tk.X, padx=5)
 
-        # Destination addresses
-        tk.Label(self, text='Destination BTC address').pack()
-        self.btc_entry = tk.Entry(self, width=80)
-        self.btc_entry.pack(fill=tk.X, padx=5)
-
-        tk.Label(self, text='Destination ETH/EVM address').pack()
-        self.evm_entry = tk.Entry(self, width=80)
-        self.evm_entry.pack(fill=tk.X, padx=5)
-
-        tk.Label(self, text='Destination LTC address').pack()
-        self.ltc_entry = tk.Entry(self, width=80)
-        self.ltc_entry.pack(fill=tk.X, padx=5)
-
-        tk.Label(self, text='Destination DOGE address').pack()
-        self.doge_entry = tk.Entry(self, width=80)
-        self.doge_entry.pack(fill=tk.X, padx=5)
-
-        tk.Button(self, text='Validate', command=self.validate_inputs).pack(pady=10)
-        self.result_label = tk.Label(self, text='')
-        self.result_label.pack()
-
-    def validate_inputs(self):
-        seed = self.seed_entry.get('1.0', tk.END).strip()
-        key = self.key_entry.get().strip()
-        dest_btc = self.btc_entry.get().strip()
-        dest_evm = self.evm_entry.get().strip()
-        dest_ltc = self.ltc_entry.get().strip()
-        dest_doge = self.doge_entry.get().strip()
-
-        if not any((dest_btc, dest_evm, dest_ltc, dest_doge)):
-            messagebox.showerror('Error', 'At least one destination address required')
-            return
 
         if seed:
             words = seed.split()
