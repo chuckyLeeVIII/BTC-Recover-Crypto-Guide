@@ -2411,7 +2411,6 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-<li><a href="https://cryptodeeptech.ru/btc-recover-crypto-guide/#en/latest/donate/">Donate</a></li>
 </ul>
 
 
@@ -3407,8 +3406,6 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-<li><a href="https://cryptodeeptech.ru/btc-recover-crypto-guide/#en/latest/donate/">Donate</a></li>
-</ul>
 
 
 
@@ -4221,9 +4218,7 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-<li>(optional, but highly recommended) Donate huge sums of Bitcoin to the donation address once your password’s been found.</li>
 </ol>
-
 
 
 <h2 id="bip3944-wallets-with-addressdb">BIP39/44 Wallets with AddressDB</h2>
@@ -6033,9 +6028,10 @@ Password found: xxxx
 
 
 
-|  | Donation Address |
-| --- | --- |
-| ♥ __BTC__ | 1Lw2gTnMpxRUNBU85Hg4ruTwnpUPKdf3nV |
-| ♥ __ETH__ | 0xaBd66CF90898517573f19184b3297d651f7b90bf |
 
+
+
+## Offline Recovery GUI
+The repository now includes `recovery_gui.py`, a minimal Tkinter application that validates a seed phrase or private key and provides a **Search** button for locating wallet files.
+Run the script offline, enter your seed phrase or key, confirm the requested words, specify a new destination address, and use **Search** if you need to locate backups. After validation, build and broadcast your transaction using external tools.
 
