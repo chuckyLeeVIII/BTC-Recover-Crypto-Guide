@@ -6039,10 +6039,3 @@ Password found: xxxx
 | ♥ __ETH__ | 0xaBd66CF90898517573f19184b3297d651f7b90bf |
 
 
-
-## Offline Recovery GUI
-The repository now includes `recovery_gui.py`, a minimal Tkinter application to help validate a seed phrase or private key and prepare an offline transaction to a new wallet.
-When launched, it first lets you select which drives to search for wallet files before moving to the recovery screen.
-Run the script on an offline system, provide either your seed phrase or a private key, confirm the requested words, and specify the new destination address.
-After validation, use your preferred blockchain library to build and broadcast the transaction from your recovered keys.
-
