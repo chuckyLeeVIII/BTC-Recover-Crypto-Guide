@@ -24,27 +24,6 @@ class RecoveryApp(tk.Tk):
         self.key_entry = tk.Entry(self, width=80)
         self.key_entry.pack(fill=tk.X, padx=5)
 
-        # Destination addresses for different coins
-        self.dest_entries = {}
-        coins = ['BTC', 'ETH', 'LTC']
-        for coin in coins:
-            tk.Label(self, text=f'{coin} destination address').pack()
-            entry = tk.Entry(self, width=80)
-            entry.pack(fill=tk.X, padx=5)
-            self.dest_entries[coin] = entry
-
-        tk.Button(self, text='Validate', command=self.validate_inputs).pack(pady=10)
-        self.result_label = tk.Label(self, text='')
-        self.result_label.pack()
-
-    def validate_inputs(self):
-        seed = self.seed_entry.get('1.0', tk.END).strip()
-        key = self.key_entry.get().strip()
-        destinations = {c: e.get().strip() for c, e in self.dest_entries.items()}
-
-        if not any(destinations.values()):
-            messagebox.showerror('Error', 'At least one destination address required')
-            return
 
         if seed:
             words = seed.split()
