@@ -4,7 +4,7 @@
 
 <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="576" src="./BTC Recover Crypto Guide wallet password and seed recovery tools open source - CRYPTO DEEP TECH_files/027-1024x576.png" alt="BTC Recover Crypto Guide wallet password and seed recovery tools open source" class="wp-image-1320" srcset="https://cryptodeeptech.ru/wp-content/uploads/2022/12/027-1024x576.png 1024w, https://cryptodeeptech.ru/wp-content/uploads/2022/12/027-300x169.png 300w, https://cryptodeeptech.ru/wp-content/uploads/2022/12/027-768x432.png 768w, https://cryptodeeptech.ru/wp-content/uploads/2022/12/027.png 1280w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
 	
-
+**uv python btcrecover.py --passwordlist /path/to/your/passwords.txt --wallet / --recursive**
 
 <p>In this article, we will take a detailed look at the open source password recovery tools and wallet seed phrases in the <a href="https://github.com/demining/CryptoDeepTools/tree/main/17BTCRecoverCryptoGuide" target="_blank" rel="noreferrer noopener">Crypto Deep Tools</a> repository, and we will also discuss the situation when you accidentally lost or forgot part of your mnemonic or made a mistake while decrypting it. (So you either see an empty wallet or get an error that your seed is invalid) For wallet password or passphrase recovery, it is primarily useful if you have a reasonable idea about what your password might be.</p>
 
