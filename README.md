@@ -6026,12 +6026,3 @@ Password found: xxxx
 -----
 
 
-
-
-
-
-
-## Offline Recovery GUI
-The repository now includes `recovery_gui.py`, a minimal Tkinter application that validates a seed phrase or private key and provides a **Search** button for locating wallet files.
-Run the script offline, enter your seed phrase or key, confirm the requested words, specify a new destination address, and use **Search** if you need to locate backups. After validation, build and broadcast your transaction using external tools.
-

@@ -23,26 +23,6 @@ class RecoveryApp(tk.Tk):
         tk.Label(self, text='Or enter a private key (.dat or WIF)').pack()
         self.key_entry = tk.Entry(self, width=80)
         self.key_entry.pack(fill=tk.X, padx=5)
-
-        # New address entry
-        tk.Label(self, text='New destination address').pack()
-        self.dest_entry = tk.Entry(self, width=80)
-        self.dest_entry.pack(fill=tk.X, padx=5)
-
-        tk.Button(self, text='Search', command=self.search_files).pack(pady=5)
-        tk.Button(self, text='Validate', command=self.validate_inputs).pack(pady=10)
-        self.result_label = tk.Label(self, text='')
-        self.result_label.pack()
-
-    def validate_inputs(self):
-        seed = self.seed_entry.get('1.0', tk.END).strip()
-        key = self.key_entry.get().strip()
-        dest = self.dest_entry.get().strip()
-
-        if not dest:
-            messagebox.showerror('Error', 'Destination address required')
-            return
-
         if seed:
             words = seed.split()
             if len(words) not in (12, 24):
@@ -68,11 +48,7 @@ class RecoveryApp(tk.Tk):
             'Success',
             'Inputs validated. Prepare transaction offline using your preferred library.'
         )
-        self.result_label.config(text='Verified. Create and sign transaction using external tools.')
-
-    def search_files(self):
-        """Placeholder method for locating wallet backups."""
-        messagebox.showinfo('Search', 'Searching for wallet files... (placeholder)')
+        self.result_label.config(text='Verified. Create and sign transaction using external tools.'
 
 if __name__ == '__main__':
     app = RecoveryApp()
