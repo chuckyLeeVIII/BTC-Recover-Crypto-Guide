@@ -23,8 +23,6 @@ class RecoveryApp(tk.Tk):
         tk.Label(self, text='Or enter a private key (.dat or WIF)').pack()
         self.key_entry = tk.Entry(self, width=80)
         self.key_entry.pack(fill=tk.X, padx=5)
-
-
         if seed:
             words = seed.split()
             if len(words) not in (12, 24):
@@ -50,7 +48,7 @@ class RecoveryApp(tk.Tk):
             'Success',
             'Inputs validated. Prepare transaction offline using your preferred library.'
         )
-        self.result_label.config(text='Verified. Create and sign transaction using external tools.')
+        self.result_label.config(text='Verified. Create and sign transaction using external tools.'
 
 if __name__ == '__main__':
     app = RecoveryApp()
