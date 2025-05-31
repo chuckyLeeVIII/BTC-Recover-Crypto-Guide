@@ -1,4 +1,6 @@
 import tkinter as tk
+from tkinter import messagebox
+from tkinter import scrolledtext
 
 # Placeholder: this script provides a simple GUI skeleton for recovering
 # a wallet and preparing a transfer to a new address. Real blockchain
@@ -46,6 +48,8 @@ class RecoveryApp(tk.Tk):
             'Success',
             'Inputs validated. Prepare transaction offline using your preferred library.'
         )
+        self.result_label.config(text='Verified. Create and sign transaction using external tools.'
+
 if __name__ == '__main__':
     app = RecoveryApp()
     app.mainloop()
