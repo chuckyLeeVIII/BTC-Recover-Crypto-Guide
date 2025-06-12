@@ -2411,7 +2411,6 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-</ul>
 
 
 
@@ -3408,7 +3407,6 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-
 <h1 id="btcrecoverpy-tutorial">btcrecover.py Tutorial</h1>
 
 
@@ -4218,7 +4216,6 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-</ol>
 
 
 <h2 id="bip3944-wallets-with-addressdb">BIP39/44 Wallets with AddressDB</h2>
@@ -6025,3 +6022,4 @@ Password found: xxxx
 -----
 -----
 
+The repository now includes `fort_knox_gui.py`, a minimal Tkinter application to help validate a seed phrase or private key and prepare an offline transaction to a new wallet.
