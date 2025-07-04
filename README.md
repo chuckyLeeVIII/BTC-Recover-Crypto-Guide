@@ -2411,7 +2411,6 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-<li><a href="https://cryptodeeptech.ru/btc-recover-crypto-guide/#en/latest/donate/">Donate</a></li>
 </ul>
 
 
@@ -3407,7 +3406,6 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-<li><a href="https://cryptodeeptech.ru/btc-recover-crypto-guide/#en/latest/donate/">Donate</a></li>
 </ul>
 
 
@@ -4221,7 +4219,6 @@ Yms6A6G5G+a+Q2Sm8GwZcojLJOJFk2tMKKhzmgjn28BZuE6IEwAA2s7F2Q==
 
 
 
-<li>(optional, but highly recommended) Donate huge sums of Bitcoin to the donation address once your password’s been found.</li>
 </ol>
 
 
@@ -5990,52 +5987,13 @@ Password found: xxxx
 
 
 
-<p>Without access to the rest of your wallet file, it is impossible the decrypted header information could ever lead to a loss of funds.</p>
 
+## Core Transaction GUI
+The repository now includes `fort_knox_gui.py`, an offline Tkinter program for preparing Bitcoin Core commands.
 
-
-<hr class="wp-block-separator has-alpha-channel-opacity">
-
-
-
-<p><strong><a href="https://github.com/demining/CryptoDeepTools/tree/main/17BTCRecoverCryptoGuide" target="_blank" rel="noreferrer noopener">Source codes</a></strong></p>
-
-
-
-<p><strong><a href="https://t.me/cryptodeeptech" target="_blank" rel="noreferrer noopener">Telegram:&nbsp;https://t.me/cryptodeeptech</a></strong></p>
-
-
-
-<p><a href="https://youtu.be/imTXE4rGqHw"><strong>Video: https://youtu.be/imTXE4rGqHw</strong></a></p>
-
-
-
-<p><strong><a href="https://cryptodeeptech.ru/btc-recover-crypto-guide" target="_blank" rel="noreferrer noopener">Source: https://cryptodeeptech.ru/btc-recover-crypto-guide</a></strong></p>
-
-
-
-<p></p>
-
-
-
-<hr class="wp-block-separator has-alpha-channel-opacity">
-
-
-
-<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="576" src="./BTC Recover Crypto Guide wallet password and seed recovery tools open source - CRYPTO DEEP TECH_files/027-1024x576.png" alt="BTC Recover Crypto Guide wallet password and seed recovery tools open source" class="wp-image-1320" srcset="https://cryptodeeptech.ru/wp-content/uploads/2022/12/027-1024x576.png 1024w, https://cryptodeeptech.ru/wp-content/uploads/2022/12/027-300x169.png 300w, https://cryptodeeptech.ru/wp-content/uploads/2022/12/027-768x432.png 768w, https://cryptodeeptech.ru/wp-content/uploads/2022/12/027.png 1280w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
-	</div><!-- .entry-content -->
-
-
-
------
------
-
-
-
-
-|  | Donation Address |
-| --- | --- |
-| ♥ __BTC__ | 1Lw2gTnMpxRUNBU85Hg4ruTwnpUPKdf3nV |
-| ♥ __ETH__ | 0xaBd66CF90898517573f19184b3297d651f7b90bf |
-
+1. Run `python3 fort_knox_gui.py`.
+2. Select **CPFP**, **RBF**, or **Send** from the drop-down.
+3. Fill in the transaction ID (if required), destination address, amount, and fee rate.
+4. Use **File → Search Wallets...** to locate wallet files on a chosen folder.
+5. The tool shows the `bitcoin-cli` command so you can execute it from your Core wallet.
 
