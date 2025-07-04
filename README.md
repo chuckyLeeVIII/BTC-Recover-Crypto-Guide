@@ -349,21 +349,3 @@ The developers are not responsible for:
 
 ## Support
 
-For support and questions:
-- **GitHub Issues**: Report bugs and feature requests
-- **Documentation**: Check the docs/ directory
-- **Security Issues**: Contact security@yourproject.com
-
-## Changelog
-
-### Version 1.0.0
-- Initial release
-- Bitcoin and Ethereum support
-- GUI and CLI interfaces
-- Comprehensive security features
-- Multi-derivation path scanning
-- Fund consolidation capabilities
-
----
-
-**Remember: Your private keys are your responsibility. Keep them secure!**
